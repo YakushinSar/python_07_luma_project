@@ -9,6 +9,10 @@ class LoginPageLocators:
     BUTTON_FORGOT_PASSWORD = (By.CSS_SELECTOR, 'a.remind')
     CREATE_AN_ACCOUNT_BUTTON = (By.XPATH, "//*[@class='action create primary']")
     TEXT_ERROR_MSG_LOGIN = 'The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later.'
+    RESET_PASS_MESS = (By.CSS_SELECTOR, 'div[data-ui-id="message-success"]')
+    TEXT_RESET_PASS = 'If there is an account associated with test@test.com you will receive an email with a link to reset your password.'
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, 'h1.page-title')
+
 
 
 class ResetPageLocators:
@@ -20,3 +24,12 @@ class ResetPageLocators:
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, "[data-ui-id=message-success] div")
     ERROR_MESSAGE = (By.CSS_SELECTOR, "#email_address-error")
     ERROR_ALERT = (By.CSS_SELECTOR, '[data-ui-id="message-error"]')
+
+class ForgotPasswordPageLocators:
+    URL = 'https://magento.softwaretestingboard.com/customer/account/forgotpassword/'
+    TEXT = 'Forgot Your Password?'
+    TEXT_WRONG_EMAIL= 'Please enter a valid email address (Ex: johndoe@domain.com).'
+    FORGOT_PASSWORD_TEXT = (By.CSS_SELECTOR, 'span[data-ui-id="page-title-wrapper"]')
+    EMAIL = (By.CSS_SELECTOR, 'input#email_address')
+    BUTTON_RESET_MY_PASSWORD = (By.CSS_SELECTOR, 'button.action.submit')
+    EMAIL_ERROR_MESS = (By.CSS_SELECTOR, 'div#email_address-error')

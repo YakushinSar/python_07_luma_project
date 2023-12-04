@@ -24,3 +24,14 @@ venv/
 
 # Игнорировать файлы .iml
 *.iml
+
+#
+x/
+Dockerfile_*
+
+#Игнорировать директрорию проекта "screenshots"
+screenshots/
+
+allure-results/
+
+allure-report/
